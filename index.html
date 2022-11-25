@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherly Healthcare</title>
+    <link rel="icon" href="images/motherlylogo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- home -->
+    <div class="header" id="home">
+
+        <div class="nav__header">
+            <div class="nav__logo">
+                <img src="images/motherlylogo.png" alt="Motherly logo">
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <a href="#home" class="nav__link">home</a>
+                <a href="#about" class="nav__link">about</a>
+                <a href="#products" class="nav__link">products</a>
+                <a href="#services" class="nav__link">services</a>
+                <a href="#contact" class="nav__link">contact</a>
+            </div>
+             
+            <div class="nav__toggle" id="menu-btn">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+
+        <div class="header__bg"></div>
+
+    </div>
+
+    <!-- about -->
+    <section class="about" id="about">
+            <div class="about__title">
+                <h1>about</h1>
+            </div>
+
+         <div class="about__content">
+            <div class="about__txt">
+                <li>We offer teaching on astrology</li>
+                <li>Counselling on spiritualism</li>
+                <li>Selling and making of herbal tea</li>
+                <li>Explanation of foods for the body</li>
+                <li>General consultation</li>
+            </div>
+
+            <div class="about__image">
+                <img src="images/aboutmotherly.JPG" alt="about image">
+            </div>
+        </div>
+    </section>
+
+    <!-- products -->
+    <section class="product" id="products">
+        <div class="product__title">
+            <h1>products</h1>
+        </div>
+
+     <!-- Swiper  -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/diabetes.JPG" alt="diabetes">
+          <h1>Diabetes tea</h1>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/manpower.JPG" alt="manpower">
+          <h1>manpower tea</h1>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/malaria.JPG" alt="malaria">
+          <h1>malaria tea</h1>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/fertility.JPG" alt="fertility">
+          <h1>fertility tea</h1>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/cleanser.JPG" alt="cleanser">
+          <h1>cleanser tea</h1>
+        </div>
+      </div>
+     
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        }
+      });
+    </script>
+            <div class="swiper-pagination"></div>
+      
+    </section>
+
+    <!-- sevices -->
+    <section class="services" id="services">
+      <div class="services__title">
+        <h1>services</h1>
+      </div>
+
+      <div class="services__images">
+        <div class="service__image">
+          <img src="images/cupping.JPG" alt="cupping therapy">
+          <h1>cupping therapy</h1>
+        </div>
+        <div class="service__image">
+          <img src="images/food specifiaction.jpeg" alt="food">
+          <h1>food specification</h1>
+        </div>
+        <div class="service__image">
+          <img src="images/geomancy chart.jpg" alt="geomancy">
+          <h1>geomancy</h1>
+        </div>
+        <div class="service__image">
+          <img src="images/spiritualissues" alt="spiritual">
+          <h1>spiritual issues</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="contact__title">
+        <h1>contact</h1>
+      </div>
+
+      <div class="contact__content">
+        <div class="address">
+          <h1>Address</h1>
+          <p>3, kolayemi street <br> Ikosi ketu, <br> Lagos Nigeria</p>
+        </div>
+
+        <div class="comment">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYfbFX1g3GwX7u6fIczxOJ9egaOVfX7R8TMWcp-OVnHK9hZg/formResponse"
+          method="POST" class="form" target="hidden_iframe"
+          onsubmit="submitted=true">
+            <h1>Comment</h1>
+            <textarea placeholder="Comment" name="entry.351400926" class="form__area"></textarea>
+            <button class="button">Submit</button>
+          </form>
+
+          <script type="text/javascript">
+            var submitted = false;
+          </script>
+          <iframe
+             name="hidden_iframe"
+             id="hidden_iframe"
+             style="display:none"
+             onload="if(submitted){window.location='#'}"
+           ></iframe>
+        </div>
+
+        <div class="social">
+          <h1>Socials</h1>
+          <div class="social__icons">
+            <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bx-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer__text">
+        <p><i>Copyright @ motherly Healthcare. All rights reserved</i></p>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
